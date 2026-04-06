@@ -9,7 +9,7 @@ Video Tutorial :   [![YouTube](https://img.shields.io/badge/YouTube-Video-green)
 
 ## Requirements
 
-To achieve our goal, we have the following requirements:
+To achieve our goal, we have the following requirements:pojopj
 - Deployment of two simple Flask applications (app1 & app2) on the GKE clusters.
 - Automation of the entire deployment process, triggered by a developer’s code push.
 - Dev-cluster deployment precedes production deployment, allowing for review before promoting to the prod-cluster.

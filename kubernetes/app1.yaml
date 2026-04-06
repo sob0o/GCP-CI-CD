@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: my-container
-          image: us-central1-docker.pkg.dev/prj-poc-001/web-app/quickstart-image
+          image: us-west1-docker.pkg.dev/qwiklabs-gcp-00-76aced4879de/web-app/quickstart-image
           ports:
             - containerPort: 8080
 
