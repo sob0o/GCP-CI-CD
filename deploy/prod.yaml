@@ -7,5 +7,5 @@ metadata:
 description: prod
 requireApproval: true
 gke:
-  cluster: cluster: projects/qwiklabs-gcp-00-76aced4879de/locations/us-west1/clusters/prod
+  cluster: projects/qwiklabs-gcp-00-76aced4879de/locations/us-west1/clusters/prod
 
