@@ -6,5 +6,5 @@ metadata:
   labels: {}
 description: dev
 gke:
-  cluster: projects/qwiklabs-gcp-00-76aced4879de/locations/us-west1/clusters/staging
+  cluster: projects/qwiklabs-gcp-00-76aced4879de/locations/us-west1/clusters/test
 
