@@ -1,24 +1,24 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'us-central1-docker.pkg.dev/<your_project_id>/web-app/quickstart-image', './app1' ]
+  args: ['build', '-t', 'us-west1-docker.pkg.dev/qwiklabs-gcp-00-76aced4879de/web-app/quickstart-image', './app1' ]
   id: 'Build Docker Image'
 
   # images:
   # - 'us-central1-docker.pkg.dev/<your_project_id>/web-app/quickstart-image'
 
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'us-central1-docker.pkg.dev/<your_project_id>/web-app/quickstart-image' ]
+  args: ['push', 'us-west1-docker.pkg.dev/qwiklabs-gcp-00-76aced4879de/web-app/quickstart-image' ]
   id: 'Push Docker Image'
 
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'us-central1-docker.pkg.dev/<your_project_id>/web-app/flask-image', './app2' ]
+  args: ['build', '-t', 'us-west1-docker.pkg.dev/qwiklabs-gcp-00-76aced4879de/web-app/flask-image', './app2' ]
   id: 'Build Docker Image2'
 
   # images:
   # - 'us-central1-docker.pkg.dev/<your_project_id>/web-app/quickstart-image'
 
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'us-central1-docker.pkg.dev/<your_project_id>/web-app/flask-image' ]
+  args: ['push', 'us-west1-docker.pkg.dev/qwiklabs-gcp-00-76aced4879de/web-app/flask-image' ]
   id: 'Push Docker Image2'
 
 
@@ -28,9 +28,9 @@ steps:
   - -xe
   - -c
   - |
-    gcloud deploy apply --file deploy/pipeline.yaml --region=us-central1
-    gcloud deploy apply --file deploy/dev.yaml --region=us-central1
-    gcloud deploy releases create 'app-release-${SHORT_SHA}' --delivery-pipeline=gke-cicd-pipeline --region=us-central1 --skaffold-file=skaffold.yaml
+    gcloud deploy apply --file deploy/pipeline.yaml --region=us-us-west1
+    gcloud deploy apply --file deploy/dev.yaml --region=us-west1
+    gcloud deploy releases create 'app-release-${SHORT_SHA}' --delivery-pipeline=gke-cicd-pipeline --region=us-us-west1 --skaffold-file=skaffold.yaml
 
 
 options:
