@@ -16,7 +16,7 @@ To achieve our goal, we have the following requirements:pojopj
 
 ## Architecture5416541
 
-![image](https://github.com/vishal-bulbule/gke-test/assets/143475073/66c914bb-4466-4a23-b977-f0880e1e1f12)
+![image](https://github.com/sob0o/GCP-CI-CD/assets/143475073/66c914bb-4466-4a23-b977-f0880e1e1f12)
 
 ## Technical Stack Summary
 
